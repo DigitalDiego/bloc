@@ -10,7 +10,8 @@ export default function Coin(props) {
     <Link className='w-1full h-[15vh] flex items-center border-b-solid border-b-[1px] border-b-gray-200 2xl:h-[10vh]' to={`/${props?.id}`}>
       <div className='w-1/2 flex justify-start items-center gap-2 lg:w-1/5'>
         <img className='w-[30px]' src={props?.image} alt={props?.id} />
-        <p>{props?.name}</p>
+        <p className='hidden lg:inline'>{props?.name}</p>
+        <p className='lg:hidden'>{props?.symbol}</p>
       </div>
       <div className='hidden lg:grid lg:place-items-center lg:w-1/5'>
         <p>${props?.market_cap?.toLocaleString()}</p>
