@@ -36,8 +36,7 @@ export default function Coin() {
           price_change_percentage_24h:
             res?.data?.market_data?.price_change_percentage_24h,
           price_change_24h_in_currency:
-            res?.data?.market_data?.price_change_percentage_24h_in_currency
-              ?.usd,
+            res?.data?.market_data?.price_change_24h_in_currency?.usd,
           high24h: res?.data?.market_data?.high_24h?.usd,
           low24h: res?.data?.market_data?.low_24h?.usd,
         };
