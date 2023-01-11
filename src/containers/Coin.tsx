@@ -15,7 +15,7 @@ export default function Coin() {
     symbol: "",
     current_price: 0,
     price_change_percentage_24h: 0,
-    price_change_percentage_24h_in_currency: 0,
+    price_change_24h_in_currency: 0,
     high24h: 0,
     low24h: 0,
   });
@@ -35,7 +35,7 @@ export default function Coin() {
           current_price: res?.data?.market_data?.current_price?.usd,
           price_change_percentage_24h:
             res?.data?.market_data?.price_change_percentage_24h,
-          price_change_percentage_24h_in_currency:
+          price_change_24h_in_currency:
             res?.data?.market_data?.price_change_percentage_24h_in_currency
               ?.usd,
           high24h: res?.data?.market_data?.high_24h?.usd,
@@ -107,7 +107,7 @@ export default function Coin() {
                   : "text-green-700"
               )}
             >
-              ${coin?.price_change_percentage_24h_in_currency}
+              ${coin?.price_change_24h_in_currency}
             </p>
           </div>
           <div className="w-full h-[10vh] border-b-solid border-b-gray-800 border-b-[1px] flex justify-between items-center 2xl:h-[8vh]">

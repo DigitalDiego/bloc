@@ -17,7 +17,7 @@ export interface IDetails {
   symbol: string;
   current_price: number;
   price_change_percentage_24h: number;
-  price_change_percentage_24h_in_currency: number;
+  price_change_24h_in_currency: number;
   high24h: number;
   low24h: number;
 }
