@@ -33,7 +33,10 @@ export default function Main() {
   return (
     <>
       <div className="w-full h-[10vh] flex justify-between items-center 2xl:max-w-7xl 2xl:mx-auto">
-        <p className="text-2xl font-bold">BLOC</p>
+        <div className="flex items-center">
+          <img className="w-[25px] h-[25px]" src="/blocDark.svg" alt="logo" />
+          <p className="text-2xl font-bold">BLOC</p>
+        </div>
         <div className="px-4 py-2 w-1/2 lg:w-2/5 flex items-center gap-2 bg-gray-800 text-gray-200 rounded-lg">
           <AiOutlineSearch />
           <input
