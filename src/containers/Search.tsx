@@ -120,15 +120,23 @@ export default function Search() {
         </div>
       ) : (
         <div className="w-full grid place-items-start gap-4 py-4 grid-cols-1 lg:grid-cols-4 2xl:max-w-7xl 2xl:mx-auto">
-          {pageOne?.map((coin) => (
-            <SearchCoin {...coin} key={coin?.id} />
-          ))}
-          {pageTwo?.map((coin) => (
-            <SearchCoin {...coin} key={coin?.id} />
-          ))}
-          {pageThree?.map((coin) => (
-            <SearchCoin {...coin} key={coin?.id} />
-          ))}
+          {pageOne?.length === 0 &&
+          pageTwo?.length === 0 &&
+          pageThree?.length === 0 ? (
+            <p>No results</p>
+          ) : (
+            <>
+              {pageOne?.map((coin) => (
+                <SearchCoin {...coin} key={coin?.id} />
+              ))}
+              {pageTwo?.map((coin) => (
+                <SearchCoin {...coin} key={coin?.id} />
+              ))}
+              {pageThree?.map((coin) => (
+                <SearchCoin {...coin} key={coin?.id} />
+              ))}
+            </>
+          )}
         </div>
       )}
       <div className="w-full flex justify-start items-center 2xl:max-w-7xl 2xl:mx-auto">
@@ -140,9 +148,13 @@ export default function Search() {
         </div>
       ) : (
         <div className="w-full grid place-items-start gap-4 py-4 grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 2xl:max-w-7xl 2xl:mx-auto">
-          {searchedNews?.map((article, index) => (
-            <NewsArticle {...article} key={index} />
-          ))}
+          {searchedNews?.length === 0 ? (
+            <p>No results</p>
+          ) : (
+            searchedNews?.map((article, index) => (
+              <NewsArticle {...article} key={index} />
+            ))
+          )}
         </div>
       )}
     </>
