@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
-import { baseUrl, fetchApi } from "../../utils";
+import { baseUrl, fetchApi } from "../utils";
 import { ICoin, INews } from "../../types";
 import { SearchCoin, NewsArticle } from "../components";
 import { AiOutlineLoading } from "react-icons/ai";
