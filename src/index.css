@@ -19,6 +19,6 @@
 
 @layer base {
   body {
-    @apply font-poppinsLight text-[#212121] px-[2vw] lg:px-[8vw];
+    @apply font-poppinsLight text-[#212121] px-[5vw] lg:px-[8vw];
   }
 }
