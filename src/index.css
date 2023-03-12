@@ -7,8 +7,13 @@
   src: url("/fonts/Poppins-Regular.ttf");
 }
 
+@font-face {
+  font-family: "PoppinsLight";
+  src: url("/fonts/Poppins-Light.ttf");
+}
+
 @layer base {
   body {
-    @apply bg-gray-200 text-gray-800 font-poppins px-[2vw] lg:px-[10vw] 2xl:px-[5vw] text-sm;
+    @apply font-poppinsLight text-[#212121] px-[2vw] lg:px-[8vw];
   }
 }

@@ -1,12 +1,15 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-import { Main, Coin } from "./containers";
+import { Home, Crypto, CryptoCoin, News, Search } from "./containers";
 
 export default function App() {
   return (
     <Routes>
-      <Route path="/" element={<Main />} />
-      <Route path="/coins/:id" element={<Coin />} />
+      <Route path="/" element={<Home />} />
+      <Route path="/crypto" element={<Crypto />} />
+      <Route path="/crypto/:id" element={<CryptoCoin />} />
+      <Route path="/news" element={<News />} />
+      <Route path="/search/:id" element={<Search />} />
     </Routes>
   );
 }
