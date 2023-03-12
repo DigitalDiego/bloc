@@ -45,11 +45,11 @@ export default function CryptoCoin() {
   return (
     <>
       {!coin ? (
-        <div className="w-full h-[85vh] grid place-items-center">
+        <div className="w-full h-[85vh] grid place-items-center 2xl:max-w-7xl 2xl:mx-auto">
           <AiOutlineLoading className="animate-spin" />
         </div>
       ) : (
-        <div className="w-full h-[85vh]">
+        <div className="w-full h-[85vh] 2xl:max-w-7xl 2xl:mx-auto">
           {/* Coin name */}
           <div className="w-full h-[15vh] flex justify-between items-center">
             <div className="flex items-center gap-1">

@@ -9,7 +9,7 @@ export default function CryptoCoin(props: ICoin) {
 
   return (
     <Link
-      className="w-full h-[10vh] flex items-center border-b-solid border-b-[1px] border-b-gray-200"
+      className="w-full h-[10vh] flex items-center border-b-solid border-b-[1px] border-b-gray-200 2xl:max-w-7xl 2xl:mx-auto"
       to={`/crypto/${props?.id}`}
     >
       <div className="w-1/2 lg:w-1/5 flex justify-start items-center gap-1">

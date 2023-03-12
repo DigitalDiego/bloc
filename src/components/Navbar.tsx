@@ -29,7 +29,7 @@ export default function Navbar() {
     return classes.filter(Boolean).join(" ");
   };
   return (
-    <div className="relative w-full h-[15vh] flex justify-between items-center border-b-solid border-b-[1px] border-b-gray-200">
+    <div className="relative w-full h-[15vh] flex justify-between items-center border-b-solid border-b-[1px] border-b-gray-200 2xl:max-w-7xl 2xl:mx-auto">
       <Link className="flex items-center gap-1" to="/">
         <img className="w-6 h-6 object-cover" src="/blocDark.svg" alt="logo" />
         <p className="text-2xl font-poppins">Bloc</p>

@@ -21,11 +21,11 @@ export default function News() {
   return (
     <>
       {!news ? (
-        <div className="w-full h-[85vh] grid place-items-center">
+        <div className="w-full h-[85vh] grid place-items-center 2xl:max-w-7xl 2xl:mx-auto">
           <AiOutlineLoading className="animate-spin" />
         </div>
       ) : (
-        <div className="w-full grid place-items-start grid-cols-1 lg:grid-cols-2 gap-4 py-4">
+        <div className="w-full grid place-items-start grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4 py-4 2xl:max-w-7xl 2xl:mx-auto">
           {news?.map((article, index) => (
             <NewsArticle {...article} key={index} />
           ))}

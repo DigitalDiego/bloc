@@ -12,6 +12,11 @@
   src: url("/fonts/Poppins-Light.ttf");
 }
 
+@font-face {
+  font-family: "PoppinsBold";
+  src: url("/fonts/Poppins-Bold.ttf");
+}
+
 @layer base {
   body {
     @apply font-poppinsLight text-[#212121] px-[2vw] lg:px-[8vw];

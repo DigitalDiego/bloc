@@ -108,16 +108,18 @@ export default function Search() {
   );
   return (
     <>
-      <div className="w-full h-[10vh] flex justify-start items-center">
+      <div className="w-full h-[10vh] flex justify-start items-center 2xl:max-w-7xl 2xl:mx-auto">
         <p>Showing results for: {id}</p>
       </div>
-      <b>Coins</b>
+      <div className="w-full flex justify-start items-center 2xl:max-w-7xl 2xl:mx-auto">
+        <p className="font-poppinsBold">Coins</p>
+      </div>
       {!coinsOne || !coinsTwo || !coinsThree ? (
-        <div className="w-full h-[15vh] grid place-items-center">
+        <div className="w-full h-[15vh] grid place-items-center 2xl:max-w-7xl 2xl:mx-auto">
           <AiOutlineLoading className="animate-spin" />
         </div>
       ) : (
-        <div className="w-full grid place-items-start gap-4 py-4 grid-cols-1 lg:grid-cols-4">
+        <div className="w-full grid place-items-start gap-4 py-4 grid-cols-1 lg:grid-cols-4 2xl:max-w-7xl 2xl:mx-auto">
           {pageOne?.map((coin) => (
             <SearchCoin {...coin} key={coin?.id} />
           ))}
@@ -129,13 +131,15 @@ export default function Search() {
           ))}
         </div>
       )}
-      <b>News</b>
+      <div className="w-full flex justify-start items-center 2xl:max-w-7xl 2xl:mx-auto">
+        <p className="font-poppinsBold">News</p>
+      </div>
       {!news ? (
-        <div className="w-full h-[15vh] grid place-items-center">
+        <div className="w-full h-[15vh] grid place-items-center 2xl:max-w-7xl 2xl:mx-auto">
           <AiOutlineLoading className="animate-spin" />
         </div>
       ) : (
-        <div className="w-full grid place-items-start gap-4 py-4 grid-cols-1 lg:grid-cols-2">
+        <div className="w-full grid place-items-start gap-4 py-4 grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 2xl:max-w-7xl 2xl:mx-auto">
           {searchedNews?.map((article, index) => (
             <NewsArticle {...article} key={index} />
           ))}

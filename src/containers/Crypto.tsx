@@ -45,7 +45,7 @@ export default function Crypto() {
   };
   return (
     <>
-      <div className="w-full h-[10vh] flex justify-between items-center">
+      <div className="w-full h-[10vh] flex justify-between items-center 2xl:max-w-7xl 2xl:mx-auto">
         <p className="text-xl font-poppins">Crypto</p>
         <div className="flex items-center gap-4">
           <IoIosArrowBack className="cursor-pointer" onClick={prev} />
@@ -53,7 +53,7 @@ export default function Crypto() {
           <IoIosArrowForward className="cursor-pointer" onClick={next} />
         </div>
       </div>
-      <div className="w-full h-[10vh] flex items-center">
+      <div className="w-full h-[10vh] flex items-center 2xl:max-w-7xl 2xl:mx-auto">
         <div className="w-1/2 lg:w-1/5 flex justify-start items-center">
           <p className="underline underline-offset-2">Name</p>
         </div>
@@ -71,7 +71,7 @@ export default function Crypto() {
         </div>
       </div>
       {!coins ? (
-        <div className="w-full h-[65vh] grid place-items-center">
+        <div className="w-full h-[65vh] grid place-items-center 2xl:max-w-7xl 2xl:mx-auto">
           <AiOutlineLoading className="animate-spin" />
         </div>
       ) : (
