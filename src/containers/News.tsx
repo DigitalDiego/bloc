@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { baseUrl, fetchApi } from "../utils";
+import { baseUrl, fetchApi } from "../../utils";
 import { INews } from "../../types";
 import { NewsArticle } from "../components";
 import { AiOutlineLoading } from "react-icons/ai";
