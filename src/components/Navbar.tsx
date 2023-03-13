@@ -60,7 +60,7 @@ export default function Navbar() {
       />
       <div
         className={cn(
-          "lg:hidden fixed top-0 right-0 z-[4000] bg-gray-100 w-full h-[100vh] px-[2vw] duration-[.8s] flex justify-start items-start flex-col gap-4",
+          "lg:hidden fixed top-0 right-0 z-[4000] bg-gray-100 w-full h-[100vh] px-[5vw] duration-[.8s] flex justify-start items-start flex-col gap-4",
           navBtn ? "translate-x-0" : "translate-x-[100%]"
         )}
       >
